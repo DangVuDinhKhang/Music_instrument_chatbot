@@ -1,0 +1,33 @@
+version: "3.1"
+
+stories:
+  - story: welcome
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: ask_price
+    steps:
+      - intent: ask_price
+      - action: action_get_price
+  
+  - story: ask_description
+    steps:
+      - intent: ask_description
+      - action: action_get_description
+
+  - story: ask_stock
+    steps:
+      - intent: ask_stock
+      - action: action_get_stock
+  
+  - story: ask_promotion
+    steps:
+      - intent: ask_promotion
+      - action: utter_res_promotion
+  

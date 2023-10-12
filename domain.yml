@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_price
+  - ask_description
+  - ask_stock
+  - ask_promotion
+  - bot_challenge
+
+entities:
+  - product_name
+
+actions:
+  - action_get_price
+  - action_get_description
+  - action_get_stock
+
+slots:
+  product_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_name
+
+responses:
+  utter_greet:
+    - text: "Xin chào, tôi có thể giúp gì cho bạn ?"
+    - text: "Chào bạn, bạn có gặp khó khăn gì không ?"
+
+  utter_goodbye:
+    - text: "Tạm biệt! Nếu bạn cần thêm sự trợ giúp, hãy quay lại đây."
+
+  utter_res_promotion:
+    - text: "Chúng tôi rất tiếc vì hiện tại chưa có chương trình khuyến mãi nào"
+    - text: "Sẽ có nhiều chương trình khuyến mãi trong tương lai, bạn hãy chờ đón nhé"
+
+  utter_iamabot:
+    - text: "Tôi là một con bot được tạo ra từ công nghệ AI, tôi ở đây để trả lời những câu hỏi của bạn."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

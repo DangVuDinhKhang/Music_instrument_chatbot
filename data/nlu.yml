@@ -1,0 +1,78 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - xin chào
+      - chào
+      - tôi có vài câu hỏi
+      - hỗ trợ tôi được không
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - bye bye
+      - tạm biệt
+      - bái bai
+
+  - intent: ask_price
+    examples: |
+      - sản phẩm [đàn tranh](product_name) có giá bao nhiêu
+      - tôi muốn biết giá của [đàn tỳ bà](product_name)
+      - giá của [đàn nguyệt](product_name)
+      - [sáo trúc](product_name) có giá là
+      - giá của [đàn t'rưng](product_name) là bao nhiêu
+      - cho tôi biết giá tiền của [đàn nhị](product_name)
+      - tôi muốn mua [song loan](product_name)
+      - giá tiền của [cồng chiên](product_name)
+      - [đàn bầu](product_name) hết bao nhiêu tiền
+      - [trống cơm](product_name) bao tiền
+
+  - intent: ask_description
+    examples: |
+      - sản phẩm [đàn tranh](product_name) là gì
+      - tôi muốn biết về [đàn tỳ bà](product_name)
+      - thông tin về [đàn nguyệt](product_name)
+      - hãy giới thiệu về [sáo trúc](product_name)
+      - hãy mô tả [đàn t'rưng](product_name)
+      - cho tôi biết thông tin của [đàn nhị](product_name)
+      - chi tiết về sản phẩm [song loan](product_name)
+      - hãy cho tôi biết thêm về [cồng chiên](product_name)
+      - [đàn bầu](product_name) là gì vậy
+      - [trống cơm](product_name) có gì nổi bậc
+
+  - intent: ask_stock
+    examples: |
+      - sản phẩm [đàn tranh](product_name) còn hàng không
+      - [đàn tỳ bà](product_name) còn không
+      - có bán [đàn nguyệt](product_name) không
+      - [sáo trúc](product_name) có bán không
+      - shop có bán [đàn t'rưng](product_name) không vậy
+      - tôi muốn mua [đàn nhị](product_name), shop có bán không
+      - shop có bán [song loan](product_name) không
+      - ở đây có bán [cồng chiên](product_name) không
+      - [đàn bầu](product_name) có hết hàng chưa
+      - [trống cơm](product_name) hết hàng hay còn hàng
+
+  - intent: ask_promotion
+    examples: |
+      - có sản phẩm nào đang khuyến mãi không
+      - hiện có chương trình khuyến mãi nào đang diễn ra không
+      - có sản phẩm nào đang giảm giá không
+      - những sản phẩm nào đang được khuyến mãi
+      - sản phẩm nào đang được giảm giá
+      - cho tôi biết sản phẩm đang được khuyến mãi
+      - cho tôi biết sản phẩm đang được giảm giá
+
+
+  - intent: bot_challenge
+    examples: |
+      - bạn là ai
+      - bạn là bot phải không?
+      - bạn là người phải không?
+      - tôi đang nói chuyện với bot à?
+      - tôi đang nói chuyện với người à?
